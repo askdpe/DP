@@ -8,14 +8,14 @@ package com.askdpe.fibonacci;
  */
 public class BaseSolution {
 
-    public Long getNum(int num){
-        if (num==0){
+    public Long getNum(int n){
+        if (n==0){
             return 0L;
         }
-        if (num==1){
+        if (n==1){
             return 1L;
         }
-        return getNum(num-1)+getNum(num-2);
+        return getNum(n-1)+getNum(n-2);
     }
 
     public static void main(String[] args) {
