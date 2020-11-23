@@ -8,12 +8,9 @@ package com.askdpe.fibonacci;
  */
 public class BaseSolution {
 
-    public Long getNum(int n){
-        if (n==0){
-            return 0L;
-        }
-        if (n==1){
-            return 1L;
+    public long getNum(int n){
+        if (n == 0 || n == 1){
+            return 1;
         }
         return getNum(n-1)+getNum(n-2);
     }

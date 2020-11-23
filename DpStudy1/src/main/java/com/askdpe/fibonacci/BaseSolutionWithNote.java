@@ -21,7 +21,7 @@ public class BaseSolutionWithNote {
      */
     public static long getNum(int n) {
         if (n == 0 || n == 1) {
-            return n;
+            return 1;
         }
 
         Long num = note.get(n);
@@ -39,7 +39,7 @@ public class BaseSolutionWithNote {
     }
 
     public static void main(String[] args) {
-        long num = getNum(40);
+        long num = getNum(0);
         System.out.println(num);
     }
 }
